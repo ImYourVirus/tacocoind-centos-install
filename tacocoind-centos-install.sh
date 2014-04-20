@@ -37,6 +37,7 @@ wget -q http://www.tacocoin.net/download/src-linux.tar.gz --no-check-certificate
 tar xf src-linux.tar.gz
 cd src
 make -f makefile.unix USE_UPNP=- BDB_LIB_PATH=/usr/local/lib OPENSSL_LIB_PATH=/usr/local/lib64
+mv litecoind tacocoind
 
 #echo " The tacocoind binary should now be compiled. Next we.ll strip the debugging symbols out of the binary and move it to a location that allows for easy execution. "
 strip tacocoind
@@ -52,13 +53,16 @@ chown taco:taco /home/taco/.tacocoin
 cd /home/taco/.tacocoin
 pass=$(tr -dc A-Za-z0-9 </dev/urandom |  head -c 30)
 echo "rpcuser=tacocoinrpc
-rpcpassword=$pass" >> tacocoin.conf
-chown taco:taco tacocoin.conf
+rpcpassword=$pass
+addnoe=taco.mineempire.com
+daemon=1
+listen=1
+server=1
+" >> coin.conf
+chown taco:taco coin.conf
 
 #echo " Assume the identity of the non-privileged user, taco. "
 su - taco
 
 #echo " Now that you.ve assumed the identity of a non-privileged user, you will want to run tacocoind for the first time. "
 tacocoind
-#wget https://raw.github.com/tacocoin/tacocoin/master-1.6/release/tacocoin.conf
-
