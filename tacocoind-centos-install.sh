@@ -34,7 +34,7 @@ ldconfig
 mkdir /usr/local/src/tacocoin-master
 cd /usr/local/src/tacocoin-master
 wget -q https://api.github.com/repos/tacocoin/tacocoin/tarball/master --no-check-certificate
-tar xf src-linux.tar.gz
+tar xf TacoCoin-TacoCoin*
 cd src
 make -f makefile.unix USE_UPNP=- BDB_LIB_PATH=/usr/local/lib OPENSSL_LIB_PATH=/usr/local/lib64
 mv tacocoind
