@@ -1,0 +1,8 @@
+# Version 2 2014-06-05
+
+Fixed repository download and extract commands.
+Added 32 bit version for download and minimal versions for just installing the daemon.
+
+# Version 1
+
+Initial writting.
