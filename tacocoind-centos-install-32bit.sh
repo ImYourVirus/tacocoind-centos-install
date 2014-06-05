@@ -1,3 +1,31 @@
+#    Version 2
+#    Written by ImYourVirus feel free to reuse it in other works for free
+#    as long as these notices are kept.
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#    
+#    
+#    If you like the work I have put into this script feel free to donate
+#    to the work that I have put into this script. Thanks.
+#    
+#    BTC:  1Hq3kzVoLyg5UF8GuCKZacreRzmZPU8s16
+#    LTC:  LdkMYTpzcfCYnkjaMsmBEPce4xQ2r1VPbq
+#    DOGE: D6bS3eK35SfqcFbnUWUnqtKA87DkFy6Vun
+#    
+#    
+
+
 # Updating the Server
 yum -y update
 
