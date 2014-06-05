@@ -33,11 +33,11 @@ cd /usr/local/src
 ldconfig
 mkdir /usr/local/src/tacocoin-master
 cd /usr/local/src/tacocoin-master
-wget -q http://www.tacocoin.net/download/src-linux.tar.gz --no-check-certificate
+wget -q https://api.github.com/repos/tacocoin/tacocoin/tarball/master --no-check-certificate
 tar xf src-linux.tar.gz
 cd src
 make -f makefile.unix USE_UPNP=- BDB_LIB_PATH=/usr/local/lib OPENSSL_LIB_PATH=/usr/local/lib64
-mv litecoind tacocoind
+mv tacocoind
 
 #echo " The tacocoind binary should now be compiled. Next we.ll strip the debugging symbols out of the binary and move it to a location that allows for easy execution. "
 strip tacocoind
