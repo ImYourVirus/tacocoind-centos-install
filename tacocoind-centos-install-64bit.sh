@@ -82,7 +82,6 @@ cd /home/taco/.tacocoin
 pass=$(tr -dc A-Za-z0-9 </dev/urandom |  head -c 30)
 echo "rpcuser=tacocoinrpc
 rpcpassword=$pass
-addnode=taco.mineempire.com
 daemon=1
 listen=1
 server=1
